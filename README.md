@@ -16,8 +16,8 @@ This project models acoustic propagation in noisy environments. It supports both
   This project uses the [Acoustic Toolbox](https://oalib-acoustics.org/models-and-software/acoustics-toolbox/) (Bellhop).  
   **Before running any scripts, you must build the Bellhop executable:**
   1. Download the Acoustic Toolbox from the link above.
-  2. Follow the provided instructions to compile it (usually running `make` in the toolbox directory).
-  3. Ensure the Bellhop executable is accessible from your environment (add to your PATH or specify its location in scripts if necessary).
+  2. Follow the provided instructions to compile it (running `make` in the toolbox directory).
+  3. Ensure the Bellhop executable is accessible from your environment, add to path.
 
 ---
 
@@ -37,7 +37,7 @@ This project models acoustic propagation in noisy environments. It supports both
 ## Usage Notes
 
 - **Scenario Customization:**  
-  The provided scripts are configured for example scenarios in a 20 m water column.  
+  The provided scripts are configured for example scenarios in a 20 meter water column.  
   To adapt for new scenarios, edit `CAE_createEnv.py`:
   - Manually define instrument depths and ranges as needed.
   - The structure is designed for easy modification by the user.
