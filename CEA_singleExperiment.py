@@ -53,7 +53,7 @@ env, topDescrip, sspDescrip, botDescrip, bottom, soundspeed, signalRange, \
                 surface_type = "flat_surface",  # Sets surface, defined in "CAE_surfaceLevels"
                 scenario = "STSNew1toFS17Real", # Sets the scenario, defined below and in "CAE_bathymetry"
                 ssp_type = "exampleStrat5",     # Sets soundspeed profile (m/s), defined in "CAE_ssp"
-                SBL = 10,                       # Surface Bubble Loss (dB), set by UWAPL. See McQuarrie et al, 2025
+                SBL = 10,                       # Surface Bubble Loss (dB), range defined by UWAPL Acoustic Handbook. See McQuarrie et al, 2025
                 detectionThreshold = 50,        # Represents background noise, used in "CAE_arrivals" to test detectability.  
                 nBeams = 100,                   # Number of beams modeled. 1000 was average to ensure coverage.
                 bottom_density = 1600,          # g/cm^3, between 1500 for sandy, 2500 for structured.
@@ -123,6 +123,7 @@ plt.axhline(y=detectionThreshold, color='r', linestyle='--', label="Detection Th
 plt.title("Arrival Strength vs. Bottom Bounces")
 plt.legend()
 plt.show()
+
 
 
 
